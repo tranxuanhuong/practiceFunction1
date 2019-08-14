@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="num1"/>
+
+<input type="button" value="square" onclick="square()"/>
+<script>
+    function square(){
+        let num=parseFloat(document.getElementById('num1').value);
+
+        let square=num*num;
+        alert(square);
+        return square;
+    }
+
+
+</script>
+
+</body>
+</html>

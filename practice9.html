@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("Nhập vào chuỗi kí tự",'');
+    let char = prompt("Nhập vào kí tự cần tìm",'');
+    let arrayChars = str.split("");
+    findChar(char, arrayChars);
+    function findChar(characters, arrayCharacters) {
+        let newArray = arrayCharacters.filter(function (item) {
+            return (item == characters);
+        });
+        console.log(newArray);
+        if(newArray.length !== 0) {
+            alert("Có " + newArray.length + " kí tự " + characters + " trong chuỗi " + str);
+        }else {
+            alert("-1");
+        }
+    }
+</script>
+
+</body>
+</html>
